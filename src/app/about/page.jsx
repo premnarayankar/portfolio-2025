@@ -150,7 +150,10 @@ const AboutPage = () => {
               className="flex gap-4 flex-wrap"
             >
               {skills.map((item) => (
-                <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                <div
+                  key={item}
+                  className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black"
+                >
                   {item}
                 </div>
               ))}
