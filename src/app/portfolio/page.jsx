@@ -8,10 +8,10 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Restaurant UI",
+    desc: "A clean and modern restaurant landing page built using Next.js and Tailwind CSS. This project is designed to showcase food items, deals, and customer engagement in a visually appealing and responsive layout.",
     img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    link: "https://restaurant-ui-rho.vercel.app/",
   },
   {
     id: 2,
@@ -75,7 +75,9 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
+                      See Demo
+                    </button>
                   </Link>
                 </div>
               </div>

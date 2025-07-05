@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+console.log("Deployed on https://portfolio-2025-two-mu.vercel.app/");
+
 const Homepage = () => {
   return (
     <motion.div
@@ -19,7 +21,7 @@ const Homepage = () => {
         {/* TEXT CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
           {/* TITLE */}
-          <h1 className="text-4xl md:text-6xl font-bold">
+          <h1 className="text-4xl md:text-4xl font-bold z-10">
             Crafting Digital Experiences, Designing Tomorrow.
           </h1>
           {/* DESC */}
@@ -36,6 +38,21 @@ const Homepage = () => {
             </button>
             <button className="p-4 rounded-lg ring-1 ring-black">
               Contact Me
+            </button>
+            <button
+              className="p-4 rounded-lg ring-1 ring-black bg-black text-white"
+              onClick={() => {
+                const link = document.createElement("a");
+                link.href = "/Prem-Narayankar-Resume.pdf";
+                link.download = "Prem-Narayankar-Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+
+                window.open("https://flowcv.com/resume/bsl6h2v3c4");
+              }}
+            >
+              View Resume
             </button>
           </div>
         </div>
