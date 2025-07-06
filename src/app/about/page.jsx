@@ -80,7 +80,7 @@ const AboutPage = () => {
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
               I’m Prem Narayankar, a React developer who loves crafting smooth,
-              responsive, and meaningful web experiences. With 3+ years in
+              responsive, and meaningful web experiences. With 3 years in
               frontend development, I’ve built fintech dashboards, sales
               platforms, and mobile apps using React, Next.js, and Ionic.
               Curious by nature, I enjoy diving into backend tech too—and I’m

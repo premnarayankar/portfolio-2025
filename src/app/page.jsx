@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 console.log("Deployed on https://portfolio-2025-two-mu.vercel.app/");
 
@@ -16,7 +17,7 @@ const Homepage = () => {
       <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48">
         {/* IMAGE CONTAINER */}
         <div className="hidden md:block h-1/2 lg:h-full lg:w-1/2 relative">
-          <Image src="/hero.png" alt="" fill className="object-contain" />
+          <Image src="/mypic2.png" alt="" fill className="object-contain" />
         </div>
         {/* TEXT CONTAINER */}
         <div className="mt-24 md:mt-0 h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center">
@@ -33,12 +34,18 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="w-full flex flex-col md:flex-row gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
+            <Link
+              className="block p-4 rounded-lg ring-1 ring-black bg-black text-white text-center"
+              href={"/about"}
+            >
               View My Work
-            </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
+            </Link>
+            <Link
+              className="block p-4 rounded-lg ring-1 ring-black text-center"
+              href={"/contact"}
+            >
               Contact Me
-            </button>
+            </Link>
             <button
               className="p-4 rounded-lg ring-1 ring-black bg-black text-white"
               onClick={() => {
